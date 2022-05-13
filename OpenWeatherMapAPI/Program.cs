@@ -9,8 +9,9 @@ namespace OpenWeatherMapAPI
         static void Main(string[] args)
         {
             var client = new HttpClient();
-            var apiKey = "89db265be99412b8e3d044cc91a322c5";
             Console.WriteLine($"Welcome to this weather app.");
+            Console.WriteLine($"Please enter API key:");
+            var apiKey = Console.ReadLine();            
             while (true)
             {
                 Console.WriteLine($"Please enter city name:");
